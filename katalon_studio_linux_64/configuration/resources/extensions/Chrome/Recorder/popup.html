@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-1.11.2.min.js"></script>
+	<script src="constants.js"></script>
+	<script src="chrome_variables_default.js"></script>
+	<script src="chrome_variables_init.js"></script>
+	<script src="chrome_common.js"></script>
+	<style>
+		.onoffswitch {
+			position: relative; width: 40px;
+			-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+		}
+		.onoffswitch-checkbox {
+			display: none;
+		}
+		.onoffswitch-label {
+			display: block; overflow: hidden; cursor: pointer;
+			height: 19px; padding: 0; line-height: 19px;
+			border: 2px solid #CCCCCC; border-radius: 19px;
+			background-color: #FFFFFF;
+			transition: background-color 0.3s ease-in;
+		}
+		.onoffswitch-label:before {
+			content: "";
+			display: block; width: 19px; margin: 0px;
+			background: #FFFFFF;
+			position: absolute; top: 0; bottom: 0;
+			right: 19px;
+			border: 2px solid #CCCCCC; border-radius: 19px;
+			transition: all 0.3s ease-in 0s; 
+		}
+		.onoffswitch-checkbox:checked + .onoffswitch-label {
+			background-color: #49E845;
+		}
+		.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+		   border-color: #49E845;
+		}
+		.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+			right: 0px; 
+		}
+	</style>
+</head>
+<body>
+	<form>
+		Toggle On/Off:<br>
+		<div class="onoffswitch">
+			<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="katalon_onoffswitch" checked>
+			<label id="katalon_onoffswitch_label" for="katalon_onoffswitch"></label>
+			<script src="popup.js"></script>
+		</div>
+		<br> Katalon Server Port:<br>
+		<input type="text" name="port" id="port">
+		<br>
+	</form>
+	</body>
+</html>

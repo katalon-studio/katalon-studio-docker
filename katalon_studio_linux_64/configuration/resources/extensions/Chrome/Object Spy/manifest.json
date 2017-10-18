@@ -1,0 +1,28 @@
+{
+	"manifest_version": 2,
+	"name": "Katalon Object Spy",
+	"description": "Element Spy Chrome extension for Katalon",
+	"version": "0.0.1.0",
+	"permissions": ["http://*/", "https://*/", "storage"],
+	"icons": { "128": "images/object_spy_24.png" },
+	"content_scripts": [
+		{
+		"all_frames": true,
+		"matches": ["http://*/*", "https://*/*"],
+		"match_about_blank": true,
+		"js": ["jquery-1.11.2.min.js", "jquery.color.js", "constants.js", "chrome_variables_default.js", "chrome_variables_init.js", "chrome_common.js",
+			"common.js", "chrome_setup.js", "dom_inspector.js", "dom_collector.js", "process_element.js", "main.js"]
+		}
+	],
+	"background": {
+        "scripts": ["constants.js", "chrome_variables_default.js", "chrome_variables_init.js", "chrome_common.js", "background.js"],
+        "persistent": false
+    },
+	"browser_action": {
+		"default_icon": {
+			"24": "images/object_spy_24.png"
+		},
+			"default_title": "Katalon Object Spy",
+			"default_popup": "popup.html"
+		}
+}

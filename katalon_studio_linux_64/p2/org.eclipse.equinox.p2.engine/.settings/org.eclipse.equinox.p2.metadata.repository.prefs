@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target/description=
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target/enabled=true
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target/isSystem=false
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target/name=module-metadata-repository@/Users/nguyenvinh/katalon/source/com.kms.katalon.product/target
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target/provider=
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target/suffix=p2content.xml
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target/type=org.eclipse.tycho.repository.module.ModuleMetadataRepository
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target/uri=file\:/Users/nguyenvinh/katalon/source/com.kms.katalon.product/target/
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target/version=1.0.0
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target_targetPlatformRepository/enabled=true
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target_targetPlatformRepository/isSystem=false
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target_targetPlatformRepository/name=TychoTargetPlatform
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target_targetPlatformRepository/suffix=content.xml
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target_targetPlatformRepository/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target_targetPlatformRepository/uri=file\:/Users/nguyenvinh/katalon/source/com.kms.katalon.product/target/targetPlatformRepository/
+repositories/file\:_Users_nguyenvinh_katalon_source_com.kms.katalon.product_target_targetPlatformRepository/version=0.0.1

@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "Katalon Recorder",
+	"description": "Object Recorder Chrome extension for Katalon",
+	"version": "0.0.0.4",
+	"permissions": ["http://*/", "https://*/", "tabs", "storage"],
+	"content_scripts": [
+		{
+		"all_frames": true,
+		"matches": ["http://*/*", "https://*/*"],
+		"match_about_blank": true,
+		"js": ["jquery-1.11.2.min.js", "constants.js", "chrome_variables_default.js", "chrome_variables_init.js", "chrome_common.js", "chrome_setup.js", "common.js", 
+			"record_common.js", "dom_recorder.js", "main.js"]
+		}
+	],
+	"background": {
+        "scripts": ["constants.js", "chrome_variables_default.js", "chrome_variables_init.js", "chrome_common.js", "background.js"],
+        "persistent": false
+    },
+	"browser_action": {
+		"default_icon": {
+			"24": "images/record_28.png"
+		},
+			"default_title": "Katalon Recorder",
+			"default_popup": "popup.html"
+		}
+}
