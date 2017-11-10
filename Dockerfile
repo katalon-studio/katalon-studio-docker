@@ -23,4 +23,4 @@ RUN ln -s /katalon/katalon /usr/bin/katalon
 COPY start_xvfb.sh /start_xvfb.sh
 RUN chmod +x /start_xvfb.sh
 
-CMD ["/start.sh"]
+CMD ["/start_xvfb.sh"]
