@@ -1,10 +1,13 @@
 FROM openjdk:slim
 
-# install xvfb
-RUN apt-get update && apt-get install -y xvfb && rm -rf /var/lib/apt/lists/*
+# install xvfb and jni
+RUN apt-get update && apt-get install -y libswt-gtk2-4-jni xvfb && rm -rf /var/lib/apt/lists/*
 
 # clear cache to conserve space
 RUN apt-get clean
+
+# disable assistive technologies
+RUN sed -i 's/^assistive_technologies=/#&/' /etc/java-8-openjdk/accessibility.properties
 
 COPY xvfb /etc/init.d/xvfb
 RUN chmod +x /etc/init.d/xvfb
