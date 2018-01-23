@@ -23,7 +23,6 @@ COPY katalon_studio_linux_64 /katalon
 RUN ln -s /docker-java-home/jre jre
 RUN ln -s /katalon/katalon /usr/bin/katalon
 
-COPY start_xvfb.sh /start_xvfb.sh
-RUN chmod +x /start_xvfb.sh
-
-CMD ["/start_xvfb.sh"]
+COPY docker-entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+ENTRYPOINT ["docker-entrypoint.sh"]
